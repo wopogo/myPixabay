@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+}
+.imgLibrary {
+  margin: 25px;
+  max-width: 100%;
+}
+.imgLibrary:hover {
+  animation: pulse;
+  animation-duration: 0.4s;
+}
+.page-container {
+  height: auto;
+  margin: 0;
+  margin-bottom: 70px;
+}
+.background-container {
+  height: 470px;
+  background-repeat: no-repeat;
+}
+.header-container {
+  height: 63px;
+}
+.header-mainpage-div {
+  float: left;
+}
+.header-logo-img {
+  width: 160px;
+  height: 60px;
+  margin: 20px;
+}
+.header-signin-div {
+  float: right;
+  padding: 17px;
+}
+.header-signin-img {
+  width: 38px;
+  height: 38px;
+  border: none;
+  margin: 5px;
+  background-size: 38px;
+  background-color: rgba( 255, 255, 255, 0 );
+}
+.header-between-searchbar {
+  height: 130px;
+  position: relative;
+}
+.logo-mean {
+  position: absolute;
+  left: 13%;
+  bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 20px;
+  -webkit-text-stroke-width: 0.8px;
+  text-shadow: 1.5px 1px 3px black;
+  /* -webkit-text-stroke-color: white; */
+}
+.searchbar-container {
+  height: 75px;
+  text-align: center;
+}
+.searchbar-div {
+  position: relative;
+  width: 77%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: white;
+}
+.searchicon {
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  padding-left: 10px;
+}
+.searchinput {
+  font-size: 38px;
+  width: 90%;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.category-container {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.category-1, .category-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 30px;
+  margin-top: 40px;
+}
+.category-menu {
+  margin: 20px;
+  height: 20px;
+}
+.category-menu-btn {
+  width: auto;
+}
+.category-menu-a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 13px 5px 10px;
+  border: 0px solid black;
+  border-radius: 50px;
+  background-color: white;
+}
+.category-menu-a:hover {
+  transition: all 0.5s;
+  background-color: #CBF1F5;
+}
+.category-menu-selected:hover {
+  transition: all 0.5s;
+  background-color: #CBF1F5;
+}
+.category-icon-selected:hover {
+  transition: all 0.5s;
+  filter: invert(54%) sepia(34%) saturate(2455%) hue-rotate(156deg) brightness(88%) contrast(101%);
+}
+.category-letter-selected:hover {
+  transition: all 0.5s;
+  filter: invert(54%) sepia(34%) saturate(2455%) hue-rotate(156deg) brightness(88%) contrast(101%);
+}
+.category-icon {
+  width: 15px;
+  margin: 5px;
+}
+.category {
+  font-size: 13px;
+  font-weight: 900;
+}
+.category-letter {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+}
+#image-list-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.image-list-column-container {
+  width: 25%;
+  height: auto;
+  flex-grow: 1;
+}
+.image-element {
+  width: auto;
+  height: 300px;
+  border: 3px solid #A6E3E9;
+  border-radius: 20px;
+  margin: 30px 15px 0;
+}
+
+@media screen and (max-width:	1350px) {
+  #column-4 {
+    display: none;
+  }
+  .searchicon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1030px) {
+  #column-3 {
+    display: none;
+  }
+  .logo-mean {
+    display: none;
+  }
+}
+/* account info */
+
+.account-info-container {
+  position: fixed;
+  right: -400px;
+  top: 10px;
+  height: 100px;
+  width: 350px;
+  margin-top: 5px;
+  border: 2px solid #88bad1;
+  border-radius: 50px 22px 22px 50px;
+  text-align: center;
+  z-index: 1;
+  background-color: white;
+}
+.account-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(211, 211, 211);
+  background-size: 100%;
+  background-image: url('/icon/close2.png');
+}
+.account-img {
+  position: absolute;
+  display: block;
+  margin: 10px;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.user-id {
+  padding: 10px;
+  padding-left: 95px;
+  padding-right: 50px;
+  text-align: center;
+}
+.user-id-font {
+  display: inline;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.signup-signin-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 95px;
+  padding-right: 50px;
+  height: 20px;
+  justify-content: space-evenly;
+}
+.signup-signin-btn {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+/* sign in */
+
+#body-container {
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  background-image: url("icon/ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#sign-in-container {
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  padding: 40px;
+  width: 550px;
+  height: 750px;
+  margin:  auto;
+}
+#sign-in-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+#sign-in-logo {
+  height: 80px;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+#sign-in-logo-img {
+  width: 50%;
+}
+#extra {
+  height: 30px;
+}
+.sign-in-div {
+  width: 100%;
+  padding-top: 35px;
+  text-align: center;
+}
+.sign-in-div span {
+  padding-left: 35px;
+  margin-bottom: 5px;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sign-in-input {
+  width: 90%;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.sign-in-input:focus {
+  outline-color: #71C9CE;
+  background-color: #CBF1F5;
+}
+#sign-in-login-container {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+#sign-in-log-in-btn {
+  margin-top: 50px;
+  padding: 8px 25px;
+}
+#signin-othersite-container {
+  width: 100%;
+  text-align: center;
+}
+.signin-othersite-img {
+  margin: 30px;
+}
+#signin-extramenu-container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  line-height: 2.5;
+}
+.signin-extramenu-a {
+  display: block;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+  color: black;
+}
+
+.active {
+  background-color: #A6E3E9;
+}
+
+.insta {
+  color:gray;
+  text-decoration: none;
+  font-weight: bolder;
+}
